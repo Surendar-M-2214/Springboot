@@ -19,7 +19,7 @@ public class CourseJpaRepo {
 	  entityManager.merge(course);
   }
   
-  public Course findId(long id) {
+  public Course findById(long id) {
 	return  entityManager.find(Course.class, id);
   }
   
